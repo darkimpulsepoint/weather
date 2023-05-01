@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 
 def get_places(name):
-    url = 'https://www.accuweather.com/en/search-locations/?query=' + name
+    url = 'https://www.accuweather.com/ru/search-locations/?query=' + name
     agent = {"User-Agent": "Mozilla/5.0"}
     response = requests.get(url, headers=agent)
     soup = BeautifulSoup(response.text, 'lxml')

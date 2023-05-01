@@ -7,7 +7,7 @@ from .utils import get_places, get_weather
 
 
 def index(request):
-    return render(request, "index.html")
+    return render(request, "weather/index.html")
 
 
 def places(request):

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hub</title>
+    <link rel="stylesheet" href={% static "hub/css/style.css" %}>
+</head>
+<body onload="start()">
+<script src={% static 'hub/js/hub.js'%}></script>
+<div id="searchbar">
+    <input id="searcharea">
+    <button id="searchbutton" onclick="search_btn()">Search</button>
+</div>
+
+<div id="results">
+
+</div>
+
+<div id="pagination">
+    <ul id="pages" class="page_list">
+    </ul>
+</div>
+</body>
+</html>
