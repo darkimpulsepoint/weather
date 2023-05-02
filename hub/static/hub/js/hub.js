@@ -11,9 +11,9 @@ function search_btn(){
 async function start(){
     let params = (new URL(document.location)).searchParams;
     let search = params.get("search")
-
-    if (search==="")
-        return
+    //
+    // if (search==="")
+    //     return
 
     let searcharea = document.getElementById("searcharea")
     searcharea.value=search
