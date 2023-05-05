@@ -31,7 +31,7 @@ async function show_videos() {
     for (let el in videos) {
         let a = document.createElement("a")
 
-        a.href = "https://pornhub.com" + videos[el]
+        a.href = "https://xvideos.com" + videos[el]
         a.textContent = el
 
         results.append(a)
