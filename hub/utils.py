@@ -9,9 +9,13 @@ def parse_hub(search, page=1):
     if not str(page).isnumeric():
         page=1
     if search=="":
-        url = "https://www.xvideos.com/?p=" + str(page)
+        if page==1:
+            url = "https://www.xvideos.com/"
+        else:
+            url = f"https://www.xvideos.com/new/{int(page)-1}"
     else:
         url = 'https://www.xvideos.com/?k=' + search + f"&p={page}"
+    print(url)
     agent = {"User-Agent": "Mozilla/5.0"}
     response = requests.get(url, headers=agent)
     soup = BeautifulSoup(response.text, 'lxml')
